@@ -1,0 +1,25 @@
+As a user, I want a form that I can fill out so that I can send messages to people.
+
+As a user, I want to be able to format the text in the form so that I can change what my text looks like.
+
+As a user, I want to be able to add in images by just copying and pasting a link to an image.
+
+As a user, I would like to be able to automatically see when a user posts and image link, that image appear automatically.
+
+As a user, I would like to be able to see messages as they happen, formatted in the way they were sent.
+
+As a user, I would like to see a timestamp on the message telling me when it was sent.
+
+As a user, I would like to have videos be automatically embedded when link is provided.
+
+As a user, I would like my name to appear next to each messages I send.
+
+As a user, I would like to have my channels appear in a sidebar so that I can navigate back and forth between rooms.
+
+As a user, I would liek to have all of my direct message conversations appear in the sidebar so i can navigate back and forth between conversations.
+
+As a user, I would like my channels and my direct messages to be separated so that I know which link goes to where.
+
+As a user, I would like to be able to send a message directly to another user either in my friends list or in a room.
+
+As a user, I would like to be able to see who is in each channel that I am in.
