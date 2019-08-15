@@ -1,31 +1,23 @@
-import React, {useState} from 'react'
+import React from 'react'
 import 'normalize.css/normalize.css'
 import '../styles/App.css'
 import { Provider } from 'react-redux'
 import store from '../store'
-import { submitName } from '../actions/example.actions'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import AuthRoute from './AuthRoute'
 
-import Button from './Button'
-import Greeting from './Greeting'
+import Login from './Login'
+import Room from './Room'
 
 export default props => {
-  const [name, setName] = useState('')
-
-  function handleSubmit(e) {
-    e.preventDefault()
-    submitName(name)
-  }
-
   return (
     <Provider store={store}>
-      <div>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="name" onChange={e => setName(e.target.value)} value={name} />
-          <button type="submit">Submit name</button>
-        </form>
-        <Button />
-        <Greeting />
-      </div>
+      <Router>
+        <div className="app">
+          <Route path="/" exact component={Login} />
+          <AuthRoute path="/:roomname" component={Room} />
+        </div>
+      </Router>
     </Provider>
   )
 }

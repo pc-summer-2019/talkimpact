@@ -1,2 +1,48 @@
 html {box-sizing:border-box;}
 *, *::before, *::after {box-sizing:inherit;}
+
+p {
+  margin:0;
+  padding-left:10px;
+}
+
+.user::after {
+  content: ":"
+}
+
+.messages {
+  overflow:auto;
+  height:600px;
+  border:1px solid #333;
+  padding:10px;
+}
+
+.messageForm {
+  display:flex;
+}
+
+.messageForm textarea {
+  flex-grow:1;
+}
+
+.container {
+  width:900px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+.indmessage {
+  display:flex;
+  align-items:flex-start;
+}
+
+.time {
+  font-size:10px;
+  color:#999;
+}
+
+.image img {
+  max-width:300px;
+  max-height:300px;
+}
