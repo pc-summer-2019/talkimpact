@@ -17,10 +17,10 @@ export default props => {
         }
 
         return (
-        <div>
-          <div key={'message' + i} className="indmessage">
+        <div key={'message' + i}>
+          <div className="indmessage">
             <span className="user">{message.username}</span>
-            <p><Linkify>{message.text}</Linkify> <span className="time">{moment(message.time).fromNow()}</span></p>
+            <p style={message.style}><Linkify>{message.text}</Linkify> <span className="time">{moment(message.time).fromNow()}</span></p>
           </div>
           {img ? <div className="image">{img}</div> : ''}
         </div>  

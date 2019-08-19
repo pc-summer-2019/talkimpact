@@ -3,10 +3,14 @@ import socket from '../socket'
 import anchorme from 'anchorme'
 
 
-export function sendMessage(message, room) {
+export function sendMessage(message, font, color, room) {
   const username = store.getState().authReducer.username
 
   const msg = {
+    style: {
+      fontFamily: font,
+      color: color
+    },
     username: username,
     text: message,
     room: room,
